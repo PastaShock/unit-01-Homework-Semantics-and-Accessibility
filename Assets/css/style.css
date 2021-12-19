@@ -1,3 +1,4 @@
+/* CSS reset */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -8,6 +9,7 @@ body {
     background-color: #d9dcd6;
 }
 
+/* was changed from class style to tag style to comply with semantics standards */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,16 +17,19 @@ header {
     color: #ffffff;
 }
 
+/* changed from header h1 because h1 only exists in the header */
 h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/* there is only one span in this document, and accessability standards would dictate that a
+span is used, rather than a div, p or other tag so the screen reader isn't interrupted mid-word */
 span {
-    font-weight: bold;
     color: #d9dcd6;
 }
 
+/* combined the .header div and .header div ul to reduce redundancy and streamline styling */
 header ul {
     padding-top: 15px;
     margin-right: 20px;
@@ -34,11 +39,13 @@ header ul {
     list-style-type: none;
 }
 
+/* changed from .header div ul li */
 header ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* styling links so that they are not blue or browser default style */
 a {
     color: #ffffff;
     text-decoration: none;
@@ -48,14 +55,17 @@ p {
     font-size: 16px;
 }
 
+/* image source was removed from CSS so that a screen reader can read the alt text
+    that was added along with the change
+    background-size and background-position were also removed for redundancy */
 .hero {
-    height: 800px;
+    height: auto;
     width: 100%;
     margin-bottom: 25px;
-    background-size: cover;
-    background-position: center;
 }
 
+/* Float-left and float-right are being kept even though they can be rolled into another style
+    because its easy to add class="float-left" to an image tag to relocate it inside an element */
 .float-left {
     float: left;
     margin-right: 25px;
@@ -66,6 +76,7 @@ p {
     margin-left: 25px;
 }
 
+/* content was set as a class for a div element when it can be used as a semantic tag */
 content {
     width: 75%;
     display: inline-block;
@@ -83,11 +94,13 @@ content {
     background-color: #2589bd;
 }
 
+/* combined .benefit-[lead,brand,cost] into one style since they were all styled the same */
 .benefit {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
+/* same change as for .benefit, but for .benefit-[*] h3 and img */
 .benefit h3 {
     margin-bottom: 10px;
     text-align: center;
@@ -99,6 +112,10 @@ content {
     max-width: 150px;
 }
 
+/* combined .search-engine-optimization
+            .online-reputation-management
+            .social-media-marketing
+    into one style */
 .Services {
     margin-bottom: 20px;
     padding: 50px;
@@ -108,6 +125,7 @@ content {
     color: #ffffff;
 }
 
+/* same as above, for img tags and h2 tags */
 .Services img {
     max-height: 200px;
 }
@@ -117,6 +135,7 @@ content {
     font-size: 36px;
 }
 
+/* changed .footer into footer tag to comply with semantics standards. */
 footer {
     padding: 30px;
     clear: both;
