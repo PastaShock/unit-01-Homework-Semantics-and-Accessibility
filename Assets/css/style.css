@@ -101,7 +101,8 @@ content {
 }
 
 /* same change as for .benefit, but for .benefit-[*] h3 and img */
-.benefit h3 {
+/* simplified from .benefit h3 to h3 */
+h3 {
     margin-bottom: 10px;
     text-align: center;
 }
@@ -130,7 +131,8 @@ content {
     max-height: 200px;
 }
 
-.Services h2 {
+/* simplified from .services h2 to h2, all other h2 in the HTML should be the same. */
+h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
@@ -143,6 +145,8 @@ footer {
     text-align: center;
 }
 
-footer h2 {
+/* Changed .footer h2 to h4 to match semantic HTML style, where h1 is used first in HTML_
+    and further headings are smaller */
+h4 {
     font-size: 20px;
 }
