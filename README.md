@@ -3,7 +3,7 @@ Assignment 1
 
 The goal is to take the given HTML and CSS and make changes as necessary to change the HTML to use more semantic tags and cleaner implementation of classes and ids.
 
-![screenshot of the finished product should look the same as the page I recieved.](./assets/screenshot.bmp)
+![screenshot of the finished product should look the same as the page I recieved.](./Assets/screenshot.bmp)
 
 The finished page should look just like the page I got in the cloned repo. 
 [Link to the github page](https://pastashock.github.io/unit-01-Homework-Semantics-and-Accessibility/)
